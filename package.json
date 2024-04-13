@@ -1,28 +1,26 @@
 {
   "name": "stellaris-navy-optimize",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "",
+  "main": "src/server/main.ts",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "tsc && node dist/server/main.js",
+    "build": "NODE_ENV=production tsc",
+    "build_win": "set NODE_ENV=production && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "Skyler Dache",
+  "license": "ISC",
   "dependencies": {
-    "jomini": "^0.9.1",
-    "next": "14.1.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "@types/node": "^20.12.5",
+    "express": "^4.19.2",
+    "jomini": "^0.9.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "typescript": "^5.4.4"
   }
 }
