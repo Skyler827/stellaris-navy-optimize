@@ -1,20 +1,20 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "jsx": "react",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "resolvePackageJsonImports": true,
     "lib": [
       "dom",
       "esnext"
     ],
     "strict": true,
-    "sourceMap": true,
+    "inlineSourceMap": true,
     "target": "esnext",
     "outDir": "../dist/web"
   },
   "include": [
-    "src/**/*"
+    "**/*"
   ],
   "exclude": [
     "node_modules"
