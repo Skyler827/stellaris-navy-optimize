@@ -11,9 +11,10 @@
     "strict": true,
     "sourceMap": true,
     "target": "esnext",
+    "outDir": "../dist/web"
   },
   "include": [
-    "src/**/*", "stellaris_common/**/*"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"

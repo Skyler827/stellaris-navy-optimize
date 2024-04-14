@@ -10,9 +10,10 @@
     "strict": true,
     "sourceMap": true,
     "target": "esnext",
+    "outDir": "../dist"
   },
   "include": [
-    "server/**/*"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
